@@ -1,0 +1,35 @@
+To run this project on your own outside of Antigravity, you'll need to start both the Django backend server and the React frontend development server at the same time.
+
+You can do this by opening your standard terminal (like PowerShell, Command Prompt, or the VS Code terminal) and opening two separate tabs/windows.
+
+Terminal 1: Start the Backend (Django)
+Open your first terminal and run the following commands one by one:
+
+powershell
+
+
+# 1. Navigate to the project directory
+cd C:\Users\debas\Downloads\Project
+# 2. Activate the Python virtual environment
+.\venv\Scripts\activate
+# 3. Navigate into the backend folder
+cd backend
+# 4. Start the Django server
+python manage.py runserver
+(The backend should now be running on http://localhost:8000)
+
+Terminal 2: Start the Frontend (React)
+Open a new terminal window or tab and run these commands:
+
+powershell
+
+
+# 1. Navigate to the project directory
+cd C:\Users\debas\Downloads\Project
+# 2. Navigate into the frontend folder
+cd frontend
+# 3. Start the Vite development server
+npm run dev
+(The frontend should now be running on http://localhost:5173)
+
+That's it! Once both are running, you can open your browser to http://localhost:5173 and the app will work perfectly, communicating with your local backend database!
